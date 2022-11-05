@@ -93,9 +93,7 @@ inner join dept_emp as t2 on
 t1.emp_no = t2.emp_no
 inner join departments as t3 on
 t2.dept_no = t3.dept_no
-
 where dept_name = 'Sales';
-
 
 -- 7. List all employees in the Sales and Development departments,
 -- including their employee number, last name, first name, and department name.
@@ -108,13 +106,11 @@ inner join dept_emp as t2 on
 t1.emp_no = t2.emp_no
 inner join departments as t3 on
 t2.dept_no = t3.dept_no
-
 where dept_name ='Sales' or dept_name = 'Development';
+
 -- 8. List the frequency count of employee last names (i.e., how many employees share each last name) 
 -- in descending order.
 select last_name, 
 	   count(last_name) as "last_name_count" 
-
 from employees group by "last_name"
-
 order by last_name_count desc;
