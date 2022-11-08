@@ -1,3 +1,5 @@
+-- Import the 6 CSVs into the SQL database in order to answer about the data
+
 CREATE TABLE "departments" (
     "dept_no" varchar   NOT NULL,
     "dept_name" varchar   NOT NULL
